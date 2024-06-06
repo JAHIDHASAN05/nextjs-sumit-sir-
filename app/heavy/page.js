@@ -1,15 +1,27 @@
-import React from "react";
+import React, { Suspense } from "react";
+import Post from "../components/Post";
 
-const Heavy = () => {
+
+const fecthTitle= async()=>{
+    await new Promise((resolve)=>{
+        setTimeout(()=>{
+         resolve()
+        },2000)
+    })
+    return 'Heavy page title'
+}
+const Heavy = async() => {
+    const title= await fecthTitle()
   return (
     <>
-      <h1>Heavy Page</h1>
+      <h1>{title}</h1>
 
-      <p>
-        {" "}
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse excepturi
-        tempora ut numquam deleniti vitae nemo adipisci beatae voluptates quod.
-      </p>
+      <div>   
+        <Suspense fallback ={<h1 className="bg-red-600">jahid loading..</h1>}>
+         <Post/>
+        </Suspense>
+    </div>
+     
     </>
   );
 };
