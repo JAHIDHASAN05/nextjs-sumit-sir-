@@ -1,3 +1,5 @@
+import Button from "@/app/components/Button";
+
 export default function Settings() {
     console.log("Rendering settings page");
     return (
@@ -10,6 +12,8 @@ export default function Settings() {
                 repellendus iste. Quis explicabo voluptatem in ea nisi! Pariatur
                 molestiae tenetur reiciendis, atque tempore quis!
             </p>
+
+            <Button path='/dashboard/analytics'>Go to analytics page</Button>
         </div>
     );
 }

@@ -1,3 +1,5 @@
+import Button from "@/app/components/Button";
+
 export const metadata = {
     title: "Analytics Page",
     description: "This is our analytics page",
@@ -14,6 +16,8 @@ export default function Analytics() {
                 repellendus iste. Quis explicabo voluptatem in ea nisi! Pariatur
                 molestiae tenetur reiciendis, atque tempore quis!
             </p>
+
+            <Button path='/dashboard/settings'>Go to settings page</Button>
         </div>
     );
 }

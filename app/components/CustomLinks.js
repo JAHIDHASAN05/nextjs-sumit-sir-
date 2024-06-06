@@ -1,10 +1,14 @@
 'use client'
 import Link from 'next/link';
-import React from 'react';
+import { usePathname } from 'next/navigation';
+
 
 const CustomLinks = ({path, children}) => {
+    const pathName= usePathname()
+
+    const isActiveLink= pathName===path
     return (
-        <Link href={`${path}`}>{children}</Link>
+        <Link className={isActiveLink ? 'text-blue-500' :null} href={`${path}`}>{children}</Link>
     );
 };
 
