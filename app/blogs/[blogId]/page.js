@@ -1,7 +1,16 @@
 import { Blogs } from "@/app/contents/data/blogs/blogs";
 
 
+export const generateStaticParams=()=>{
+    return Blogs.map(blog=> ({
+        blogId : blog.id
+    }))
+
+}
+
 const SingleBlogs = ({params}) => {
+
+
     const {blogId}= params
     
 
