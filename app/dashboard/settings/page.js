@@ -1,4 +1,5 @@
 import Button from "@/app/components/Button";
+import SortProducts from "@/app/components/SortProducts";
 
 export default function Settings() {
     console.log("Rendering settings page");
@@ -14,6 +15,8 @@ export default function Settings() {
             </p>
 
             <Button path='/dashboard/analytics'>Go to analytics page</Button>
+
+            <SortProducts/>
         </div>
     );
 }
