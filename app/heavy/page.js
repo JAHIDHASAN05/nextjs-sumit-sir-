@@ -6,7 +6,7 @@ const fecthTitle= async()=>{
     await new Promise((resolve)=>{
         setTimeout(()=>{
          resolve()
-        },2000)
+        },1000)
     })
     return 'Heavy page title'
 }
