@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import CustomLinks from "./components/customLinks";
 
 const inter = Inter({ subsets: ["latin"] });
+import './globals.css'
 
 export default function RootLayout({ children }) {
     return (
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
                         <li><CustomLinks prefecth={false} path="/">Home</CustomLinks></li>
                         <li><CustomLinks path="/dashboard/analytics">Anylytics</CustomLinks></li>
                         <li><CustomLinks path="/dashboard/settings">Contact Us</CustomLinks> </li>
+                        <li><CustomLinks path="/heavy">heavy </CustomLinks> </li>
                     </ul>
                 </nav>
                 {children}
