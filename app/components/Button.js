@@ -8,6 +8,7 @@ const Button = ({path ,children}) => {
         router.push(path)
      }
     return (
+        
         <button onClick={handleButton} className='px-3 py-2 bg-blue-500 mt-6 text-white'>
             {children}
         </button>
