@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
             <body className={inter.className}>
                 <nav className="p-4 border-b border-gray-400">
                     <ul className="flex gap-5">
-                        <li><CustomLinks path="/">Home</CustomLinks></li>
+                        <li><CustomLinks prefecth={false} path="/">Home</CustomLinks></li>
                         <li><CustomLinks path="/dashboard/analytics">Anylytics</CustomLinks></li>
                         <li><CustomLinks path="/dashboard/settings">Contact Us</CustomLinks> </li>
                     </ul>
