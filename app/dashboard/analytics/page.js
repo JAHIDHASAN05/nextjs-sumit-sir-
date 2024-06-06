@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Analytics() {
 
-    throw new Error('a;dlkfja;sdl')
+
     return (
         <div className="p-4">
             <h1 className="text-2xl">Analytics page</h1>
